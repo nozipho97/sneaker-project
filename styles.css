@@ -1,0 +1,147 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #ed2d34;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(black);
+}
+
+
+
+body {
+  background-image: url(./banner.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 15rem
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #ed2d34;
+}
+
+.home span {
+  color: black;
+}
+
+.home p {
+  font-size: medium;
+  color: var(--black) solid;
+}
+
+.btn {
+  padding: 7rem 3rem;
+  text-align: center;
+  background: #ed2d34;
+  color: black;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  width: 5rem;
+}
+
+/* Page Container Styles */
+.header .page-header-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+
+/* Navigation Tooltip Styling */
+
+#navbar ul li {
+  color: red;
+  background-color: black;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#navbar-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
